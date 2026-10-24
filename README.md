@@ -16,6 +16,10 @@ Requires Neovim ≥ 0.12.
 ```sh
 git clone git@github.com:StevenD2002/proving-grounds.nvim.git ~/fun/proving-grounds.nvim
 ln -s ~/fun/proving-grounds.nvim/nvim ~/.config/nvim
+ln -s ~/fun/proving-grounds.nvim/herdr/config.toml ~/.config/herdr/config.toml
+ln -s ~/fun/proving-grounds.nvim/kitty ~/.config/kitty/proving-grounds
+echo 'include proving-grounds/proving-grounds.conf' >> ~/.config/kitty/kitty.conf
+brew install --cask font-monaspice-nerd-font
 ```
 
 ## Layout
@@ -27,7 +31,8 @@ nvim/                    → symlinked to ~/.config/nvim
   lua/plugins/           one file per third-party plugin (vim.pack)
   lua/proving_grounds/   home-grown features, each switchable
 herdr/config.toml        → symlinked to ~/.config/herdr/config.toml
+kitty/                   → symlinked to ~/.config/kitty/proving-grounds (font + theme)
 docs/decisions/          ADRs
 ```
 
-`kitty/`, `claude/` and `mcp/` arrive in later phases.
+`claude/` and `mcp/` arrive in later phases.

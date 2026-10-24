@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "material.nvim": {
+      "rev": "92f7366a9315cd386bc4fa4d716fde375dda210f",
+      "src": "https://github.com/marko-cerovac/material.nvim.git"
+    }
+  }
+}
