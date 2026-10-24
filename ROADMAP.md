@@ -15,10 +15,10 @@ skeletons with `TODO` holes. From Phase 2 on, Steven writes and Claude reviews.
 - [x] Symlink `~/.config/nvim` → `nvim/`
 
 ## Phase 1: Look
-- [ ] material.nvim, "darker" style
-- [ ] Hand-built kitty theme from material.nvim's palette (`kitty/`)
-- [ ] Kitty font: Monaspice Neon, Radon italics, texture healing on, ligatures off
-- [ ] Statusline showing the mode (then `showmode = false`)
+- [x] material.nvim, "darker" style
+- [x] Hand-built kitty theme from material.nvim's palette (`kitty/`)
+- [x] Kitty font: Monaspice Neon, Radon italics, texture healing on, ligatures off
+- [X] Statusline showing the mode (then `showmode = false`)
 
 ## Phase 2: Editor core
 - [ ] snacks.nvim (picker, notifier, lazygit float)

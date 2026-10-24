@@ -8,6 +8,7 @@ local M = {}
 
 M.features = {
   { "cheatsheet", true }, -- <leader>? opens CHEATSHEET.md in a float
+  {"statusline", true},
 }
 
 function M.setup()

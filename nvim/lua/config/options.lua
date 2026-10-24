@@ -61,5 +61,5 @@ o.timeoutlen = 400 -- ms to wait for the next key of a mapping like `jk`
 -- clobbers what you copied elsewhere.  :help 'clipboard'  :help quote+
 
 -- Mode indicator ------------------------------------------------------------
--- Stays on until Phase 1 gives us a statusline that shows the mode.
-o.showmode = true
+-- false, we have a custom status line now
+o.showmode = false
