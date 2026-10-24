@@ -26,6 +26,7 @@ nvim/                    → symlinked to ~/.config/nvim
   lua/config/            options, keymaps, autocmds, plugin loader
   lua/plugins/           one file per third-party plugin (vim.pack)
   lua/proving_grounds/   home-grown features, each switchable
+herdr/config.toml        → symlinked to ~/.config/herdr/config.toml
 docs/decisions/          ADRs
 ```
 

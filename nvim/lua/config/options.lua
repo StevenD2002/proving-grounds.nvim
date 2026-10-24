@@ -56,13 +56,9 @@ o.updatetime = 250 -- ms of idle before CursorHold fires (LSP highlights, etc.)
 o.timeoutlen = 400 -- ms to wait for the next key of a mapping like `jk`
 
 -- Clipboard -----------------------------------------------------------------
--- Make yank/paste use the macOS clipboard. Scheduled because talking to the
--- clipboard provider is slow-ish and doesn't need to block startup.
--- Trade-off to consider: with this on, every `dd` overwrites your system
--- clipboard. The alternative is leaving it off and using "+y / "+p explicitly.
-vim.schedule(function()
-  o.clipboard = "unnamedplus"
-end)
+-- Deliberately NOT synced with the macOS clipboard. Use "+y / "+p when you
+-- mean the system clipboard; plain y/d/p stay inside nvim, so `dd` never
+-- clobbers what you copied elsewhere.  :help 'clipboard'  :help quote+
 
 -- Mode indicator ------------------------------------------------------------
 -- Stays on until Phase 1 gives us a statusline that shows the mode.

@@ -7,10 +7,18 @@ Rule: a commit that changes a keymap updates this file too.
 
 | Keys | Mode | Does |
 |---|---|---|
-| `;` | n, x | `:` command line (shadows "repeat f/t") |
 | `jk` | i | leave insert mode |
 | `Esc` | n | clear search highlight |
 | `Space ?` | n | this cheatsheet |
+
+## herdr panes (Alt = left Option)
+
+| Keys | Does |
+|---|---|
+| `Alt h/j/k/l` | focus pane left / down / up / right |
+| `Alt t` | zoom the focused pane (toggle) |
+| `Alt v` / `Alt -` | split right / split down |
+| `Ctrl-b` then `h/j/k/l/z/v/-` | the same actions via herdr's prefix (fallback) |
 
 ## Built-ins worth getting back into your fingers
 

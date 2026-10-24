@@ -24,6 +24,7 @@ skeletons with `TODO` holes. From Phase 2 on, Steven writes and Claude reviews.
 - [ ] snacks.nvim (picker, notifier, lazygit float)
 - [ ] oil.nvim (`-`)
 - [ ] which-key with group labels (`f` `g` `G` `l` `a` `t`)
+- [ ] `Ctrl+h/j/k/l` → move between nvim splits (`Alt+h/j/k/l` is taken by herdr panes)
 
 ## Phase 3: Languages
 - [ ] treesitter
@@ -67,6 +68,8 @@ skeletons with `TODO` holes. From Phase 2 on, Steven writes and Claude reviews.
 - [ ] ACP client (codecompanion.nvim or agentic.nvim) so other / self-hosted models can drive
 
 ## Experiments backlog
+- Seamless `Ctrl+hjkl` across nvim splits *and* herdr panes (vim-tmux-navigator style).
+  This needs herdr to pass keys through when nvim is focused; check whether it can.
 - Feed pinned focus marks to the local model as `input_extra` context
 - Semantic repo context for Tier 1 (VectorCode + minuet). VectorCode looked stalled as of 2026-10
 - Sandboxing Bash in Navigator mode, if the honour system leaks

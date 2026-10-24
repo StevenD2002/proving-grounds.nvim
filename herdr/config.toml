@@ -1,0 +1,43 @@
+onboarding = false
+
+[ui]
+status_indicators = "symbols"
+tab_bar_right = [
+  { type = "command", command = "~/.config/herdr/aws-status.sh", interval_seconds = 120, timeout_seconds = 15 },
+]
+
+[keys]
+# Direct (no-prefix) chords added alongside the ctrl+b defaults.
+# ctrl+alt avoids kitty's own ctrl+tab / cmd+shift+[ ] tab shortcuts.
+
+# Tabs: like kitty's next/prev tab
+next_tab = ["prefix+n", "ctrl+alt+n"]
+previous_tab = ["prefix+p", "ctrl+alt+p"]
+switch_tab = ["prefix+1..9", "ctrl+alt+1..9"]
+new_tab = ["prefix+c", "ctrl+alt+c"]
+
+# Workspaces
+next_workspace = "ctrl+alt+down"
+previous_workspace = "ctrl+alt+up"
+
+# Panes within a tab: Alt (left Option) + home row.
+# Two layers: Alt+hjkl moves between herdr panes, Ctrl+hjkl between nvim splits.
+cycle_pane_next = ["prefix+tab"]
+focus_pane_left = ["prefix+h", "alt+h"]
+focus_pane_down = ["prefix+j", "alt+j"]
+focus_pane_up = ["prefix+k", "alt+k"]
+focus_pane_right = ["prefix+l", "alt+l"]
+zoom = ["prefix+z", "alt+t"]  # shadows Claude Code's meta+t thinking toggle
+# Splits and workspaces
+split_vertical = ["prefix+v", "alt+v"]
+split_horizontal = ["prefix+minus", "alt+minus"]
+new_workspace = ["prefix+shift+n", "ctrl+alt+shift+n"]
+
+# AWS SSO login popup
+[[keys.command]]
+key = "prefix+a"
+type = "popup"
+command = "~/.config/herdr/aws-login.sh"
+description = "aws sso login"
+width = "70%"
+height = "50%"
