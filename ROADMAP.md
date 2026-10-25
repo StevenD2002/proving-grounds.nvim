@@ -24,7 +24,7 @@ skeletons with `TODO` holes. From Phase 2 on, Steven writes and Claude reviews.
 - [ ] snacks.nvim (picker, notifier, lazygit float)
 - [ ] oil.nvim (`-`)
 - [ ] which-key with group labels (`f` `g` `G` `l` `a` `t`)
-- [ ] `Ctrl+h/j/k/l` → move between nvim splits (`Alt+h/j/k/l` is taken by herdr panes)
+- [x] `Ctrl+h/j/k/l` → move between nvim splits (`Alt+h/j/k/l` is taken by herdr panes)
 
 ## Phase 3: Languages
 - [ ] treesitter

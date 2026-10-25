@@ -10,6 +10,7 @@ Rule: a commit that changes a keymap updates this file too.
 | `jk` | i | leave insert mode |
 | `Esc` | n | clear search highlight |
 | `Space ?` | n | this cheatsheet |
+| `Ctrl-h/j/k/l` | n | move between nvim windows |
 
 ## herdr panes (Alt = left Option)
 
