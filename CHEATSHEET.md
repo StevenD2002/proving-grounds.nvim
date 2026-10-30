@@ -11,6 +11,7 @@ Rule: a commit that changes a keymap updates this file too.
 | `Esc` | n | clear search highlight |
 | `Space ?` | n | this cheatsheet |
 | `Ctrl-h/j/k/l` | n | move between nvim windows |
+| `Space f f` | n | open up the file search menu |
 
 ## herdr panes (Alt = left Option)
 
