@@ -16,3 +16,4 @@ require("snacks").setup({
 })
 
 map("n", "<leader>ff", function() Snacks.picker.files() end, {desc = "Opens the file search menu"})
+map("n", "<leader>gg", function() Snacks.lazygit() end, {desc = "Opens the file search menu"})
