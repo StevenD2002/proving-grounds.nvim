@@ -10,10 +10,10 @@ require("snacks").setup({
   picker = { enabled = true },
   styles = {
     notification = {
-      wo = { wrap = true } -- Wrap notifications
+      wo = { wrap = true }
     }
   }
 })
 
 map("n", "<leader>ff", function() Snacks.picker.files() end, {desc = "Opens the file search menu"})
-map("n", "<leader>gg", function() Snacks.lazygit() end, {desc = "Opens the file search menu"})
+map("n", "<leader>gg", function() Snacks.lazygit() end, {desc = "Opens the git menu for quick git actions"})
