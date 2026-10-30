@@ -13,6 +13,7 @@ Rule: a commit that changes a keymap updates this file too.
 | `Ctrl-h/j/k/l` | n | move between nvim windows |
 | `Space f f` | n | open up the file search menu |
 | `Space g g` | n | open up the git menu |
+| `-` | n | opens current directory as buffer |
 
 ## herdr panes (Alt = left Option)
 
