@@ -27,9 +27,9 @@ skeletons with `TODO` holes. From Phase 2 on, Steven writes and Claude reviews.
 - [x] `Ctrl+h/j/k/l` → move between nvim splits (`Alt+h/j/k/l` is taken by herdr panes)
 
 ## Phase 3: Languages
-- [ ] treesitter
-- [ ] Mason + native `vim.lsp.config`: vtsls, gopls, rust-analyzer, basedpyright, ruff
-- [ ] conform.nvim, format on save
+- [x] treesitter
+- [x] Mason + native `vim.lsp.config`: vtsls, gopls, rust-analyzer, basedpyright, ruff
+- [x] conform.nvim, format on save
 - [ ] Native `vim.lsp.completion` (blink.cmp only if it hurts)
 - [ ] Diagnostics config
 

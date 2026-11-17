@@ -20,7 +20,18 @@ ln -s ~/fun/proving-grounds.nvim/herdr/config.toml ~/.config/herdr/config.toml
 ln -s ~/fun/proving-grounds.nvim/kitty ~/.config/kitty/proving-grounds
 echo 'include proving-grounds/proving-grounds.conf' >> ~/.config/kitty/kitty.conf
 brew install --cask font-monaspice-nerd-font
+brew install tree-sitter-cli   # nvim-treesitter compiles parsers with it
 ```
+
+Then start `nvim` once so `vim.pack` installs the plugins, and install the
+language servers and formatters:
+
+```
+:MasonInstall vtsls gopls rust-analyzer basedpyright ruff lua-language-server prettier stylua
+```
+
+Go, Rust, Node and Python themselves are expected on `PATH` (`gofmt` and
+`rustfmt` come with their toolchains).
 
 ## Layout
 
@@ -33,6 +44,7 @@ nvim/                    → symlinked to ~/.config/nvim
 herdr/config.toml        → symlinked to ~/.config/herdr/config.toml
 kitty/                   → symlinked to ~/.config/kitty/proving-grounds (font + theme)
 docs/decisions/          ADRs
+.luarc.json              tells lua_ls this is Neovim Lua (vim.*, installed plugins)
 ```
 
 `claude/` and `mcp/` arrive in later phases.
